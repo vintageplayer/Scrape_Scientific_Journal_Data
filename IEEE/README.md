@@ -7,7 +7,7 @@ The script uses python 2 as the interpreter.
 It requires bs4 and json packages pre-installed along with the default packages.
 
 ##USAGE
-The script currently could be used to scrape any or all journals information about which is present in the data folder. The script accepts two-three parameters.
+The script currently could be used to scrape any or all journals, information about which are present in the data folder. The script accepts two-three parameters.
 
 ###How to execute:
 python(2) x y [z]
