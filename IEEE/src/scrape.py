@@ -325,7 +325,10 @@ def get_issues(aurl,adir):
             try:
                 issue_no = re.findall(r'Issue: [0-9]+',str(issue.get_text()))[0]
             except IndexError:
-                issue_no = re.findall(r'Issue: [A-Z][0-9]+',str(issue.get_text()))[0]
+                try:
+                    issue_no = re.findall(r'Issue: [A-Z][0-9]+',str(issue.get_text()))[0]
+                except IndexError:
+                    continue
             print("Issue Name : "+str(issue_no))
             issue_no = re.sub('[^a-zA-Z0-9 ]','',issue_no)
             issue_dir = volume_dir + '/' + issue_no
