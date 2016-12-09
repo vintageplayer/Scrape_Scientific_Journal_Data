@@ -17,7 +17,7 @@ python(2) x y [i] [j]
  - j : Optional parameter. Specifies the starting Issue number(index starting from 1) for the first volume being scraped. Any further issues are scraped. All other volumes are completely scraped.
 
 As of now there is no provision to scrape from a specific article. The whole
-volume will be scraped. In case of connection breaks (due to power cut etc)
+issue will be scraped. In case of connection breaks (due to power cut etc)
 you may have to restart the script from an appropriate volume of the journal
 being scraped. 
 
@@ -31,4 +31,7 @@ Thankyou for using and feel free to flag an issue when faced with one.
 
 #CHANGELOG
 v2
-The IEEE website was revamped and was fetching data dynamically. The source URLs were found and request are made directly to it reducing the data usage and server load. Resposiveness increased.
+ - The IEEE website was revamped and was fetching data dynamically. The source URLs were found and request are made directly to it reducing the data usage and server load. Resposiveness increased.
+ - Updated script for python3 instead of python2
+ - Provieded option of specifying a specific start issue index
+ - Set a addtional 30sec timeout limit to get a response from server
