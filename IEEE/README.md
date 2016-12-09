@@ -8,8 +8,6 @@ It requires bs4 and jsone packages pre-installed along with the default packages
 
 ##USAGE
 The script currently could be used to scrape any or all journals, information about which is present in the data folder. The script accepts 2-4 parameters.
-=======
-The script currently could be used to scrape any or all journals, information about which are present in the data folder. The script accepts two-three parameters.
 
 ###How to execute:
 python(2) x y [i] [j] 
