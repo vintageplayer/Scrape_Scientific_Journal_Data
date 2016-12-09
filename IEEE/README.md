@@ -7,11 +7,9 @@ The script uses python 3 as the interpreter.
 It requires bs4 and jsone packages pre-installed along with the default packages.
 
 ##USAGE
-<<<<<<< HEAD
 The script currently could be used to scrape any or all journals, information about which is present in the data folder. The script accepts 2-4 parameters.
 =======
 The script currently could be used to scrape any or all journals, information about which are present in the data folder. The script accepts two-three parameters.
->>>>>>> e0cd08d3a0c720d082052defe8bcb263373bf484
 
 ###How to execute:
 python(2) x y [i] [j] 
@@ -27,6 +25,7 @@ being scraped.
 
 #MORE INFO
 NOT APPLICABLE ANYMORE for v2!!
+
 Usually an article is scraped and processed within 25-35 seconds. If the time elapsed since the previous article is much more than that (say > 1-2 minute(s)) it is possible that a connection break occured and you might have to restart the script with appropriate parameters. This efficiency was measured on a MACBOOKPRO 2015 with a 14MbPS connection. Your average access and process time for an article could differ based on the device or network connection load.
 
 
