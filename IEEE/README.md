@@ -1,6 +1,6 @@
 #IEEE Journal Scrape API
 
-The script is present in src folder and is called scrape.py.
+The latest script is present in src folder, called scrape_v2.py.
 
 ##REQUIREMENTS
 The script uses python 3 as the interpreter.
@@ -10,7 +10,7 @@ It requires bs4 and jsone packages pre-installed along with the default packages
 The script currently could be used to scrape any or all journals, information about which is present in the data folder. The script accepts 2-4 parameters.
 
 ###How to execute:
-python(2) x y [i] [j] 
+python(3) x y [i] [j] 
  - x : The starting index of the journal to be scraped (indexed starting from 1)
  - y : The limiting journal index to be scraped (indexed journal is not scraped)
  - i : Optional parameter. Specifies the Volume number(indexed starting from 1) to start scraping from for the first journal specified by parameter `x`. All the volumes are scraped for the subsequent journals.
