@@ -131,7 +131,12 @@ def get_articles(aurl,adir):
         total_number 			= "10"
     newurl 						= 'http://ieeexplore.ieee.org' + link0['value'] + link1['value'] + '&rowsPerPage=' + total_number
     fsoup 						= get_soup(newurl)
-    articles 					= fsoup.find('ul',{'class':'results'}).find_all('li')
+
+    try:
+    	articles 					= fsoup.find('ul',{'class':'results'}).find_all('li')
+    except AttributeError:
+    	continue
+
     count 						= 0
     count_article 				= 0
     for article in articles:
