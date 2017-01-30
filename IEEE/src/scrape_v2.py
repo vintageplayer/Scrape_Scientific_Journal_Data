@@ -77,6 +77,21 @@ def get_details(arnumber):
 	return details
 
 
+# Getting the authors' details
+def get_authors(arnumber):
+	details 	= {}
+
+	try:
+		details_link		= JSON_Data_link + arnumber + "/authors"
+		response 			= get_response(details_link)
+		content				= response.read().decode()
+		details 	= json.loads(content)
+	except Exception:
+		pass
+
+	return details
+
+
 # Getting the references JSON structure provided under the References tab of an article
 def get_references(arnumber):
 	references 	= {}
@@ -111,6 +126,7 @@ def get_article(arnumber):
 
 	article["arnumber"] 		= arnumber
 	article["details"] 			= get_details(arnumber)
+	article["authors"]			= get_authors(arnumber)
 	reference_data				= get_references(arnumber)
 	try:
 		article["references"]	= reference_data['references']
